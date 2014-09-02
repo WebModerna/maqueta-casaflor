@@ -22,3 +22,10 @@ css/font
 css/lib/
 css/node_modules/
 css/test/
+css/icomoon/fonts
+css/icomoon/*.html
+css/icomoon/*.css
+css/icomoon/demo-files
+css/icomoon/*.zip
+css/icomoon/*.json
+css/icomoon/*.txt
