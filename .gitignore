@@ -11,3 +11,14 @@ wp-content/cache/
 wp-content/backups/
 sitemap.xml.gz
 wp-config.php
+codiguero.html
+*.txt
+wireframes/
+frameworks/
+css/source/*.js
+css/source/*.css
+css/source/helpers
+css/font
+css/lib/
+css/node_modules/
+css/test/
