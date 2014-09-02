@@ -29,3 +29,5 @@ css/icomoon/demo-files
 css/icomoon/*.zip
 css/icomoon/*.json
 css/icomoon/*.txt
+css/helpers/*.db
+img/*.db
