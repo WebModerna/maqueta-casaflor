@@ -1,0 +1,30 @@
+/* ---- Tooltip ---- */
+.tooltip{display: inline; position: relative; color: #2ba6cb;}
+.tooltip:hover:before
+{
+	border: solid;
+	border-color: #333 transparent;
+	border-width: 6px 6px 0 6px;
+	bottom: 21px;
+	content: "";
+	left: 50%;
+	position: absolute;
+	z-index: 97;
+}
+.tooltip:hover:after
+{
+	background: #333;
+	background: rgba(0,0,0,.8);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	bottom: 27px;
+	font-size: 12px;
+	color: #fff;
+	content: attr(title);
+	padding: 5px;
+	position: absolute;
+	z-index: 98;
+	width: 180px;
+	margin-left: -50px;
+}

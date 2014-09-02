@@ -1,0 +1,183 @@
+/* Las estructuras */
+
+body
+	background #e2d2ec
+	background unquote("url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UyZDJlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjI0JSIgc3RvcC1jb2xvcj0iI2UyZDJlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUzJSIgc3RvcC1jb2xvcj0iIzgxNjY5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg1JSIgc3RvcC1jb2xvcj0iI2UxZDNlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg1JSIgc3RvcC1jb2xvcj0iI2UxZDNlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iI2UxZDNlYyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=)")
+	background linear-gradient(to bottom, #e2d2ec 0%,#e2d2ec 24%,#816699 53%,#e1d3ec 85%,#e1d3ec 85%,#e1d3ec 99%)
+	filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2d2ec', endColorstr='#e1d3ec',GradientType=0 )")
+	font-size 18px
+	font-family "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
+	text-align center
+
+article
+	background blanco_normal
+
+
+header
+	padding 0
+	margin 0
+	nav
+		#header_nav
+			margin 0.5em 0 0 0
+			padding 0
+			height 0
+			opacity 0
+			transition(all 0.3s ease-in-out)
+			visibility hidden
+
+			li
+				background negro_transparente
+				a
+					background negro
+					border-radius(4px)
+					box-shadow_lindo()
+					color gris_claro
+					display block
+					padding 0.5em 1em
+					font-size 1.3em
+					text-shadow_lindo()
+					transition(all 0.3s ease-in-out)
+
+				a:hover, a:focus
+					background gris_claro
+					color negro
+
+			ul
+				padding 0 auto
+				margin 0 auto
+
+	#boton_menu
+		display inline-block
+		position absolute
+		right 0.3em
+		top 0.3em
+
+		#menu
+			padding 0.3em 0.5em
+			font-size 1.5em
+
+	
+	#logo
+		display inline-block
+		margin-top 0.3em
+		width auto
+		
+		div
+			div
+				display none
+
+			figure
+				display inline-block
+				width 40px
+
+				img
+					width 100%
+
+			#nombre_logo
+				color blanco_lila_logo
+				display inline-block
+				font-size 1.3em
+				text-shadow(-4px -4px 0px negro)
+				
+								
+				i
+					margin-left 0.3em
+					font-size 16px
+					color naranja_claro
+
+				/* Lo comento lo habilitaré en modalidad desktop
+				span
+					color negro
+					text-shadow 2px 2px 0px blanco_lila_logo, -2px 2px 0px blanco_lila_logo, 2px -2px 0px blanco_lila_logo, -2px -2px 0px blanco_lila_logo
+					-o-text-shadow 2px 2px 0px blanco_lila_logo, -2px 2px 0px blanco_lila_logo, 2px -2px 0px blanco_lila_logo, -2px -2px 0px blanco_lila_logo
+					-ms-text-shadow 2px 2px 0px blanco_lila_logo, -2px 2px 0px blanco_lila_logo, 2px -2px 0px blanco_lila_logo, -2px -2px 0px blanco_lila_logo
+					-moz-text-shadow 2px 2px 0px blanco_lila_logo, -2px 2px 0px blanco_lila_logo, 2px -2px 0px blanco_lila_logo, -2px -2px 0px blanco_lila_logo
+					-webkit-text-shadow 2px 2px 0px blanco_lila_logo, -2px 2px 0px blanco_lila_logo, 2px -2px 0px blanco_lila_logo, -2px -2px 0px blanco_lila_logo*/
+				
+	#mensaje_top_site
+		display none
+
+	#slideshow
+		#barra_control
+			display inline-block
+			margin 0
+			padding 0
+			ul
+				margin 0
+				padding 0
+				display inline-block
+				
+				li
+					display inline-block
+					margin 0
+					padding 0
+					text-align center
+					
+					a
+						background blanco_transparente
+						color blanco
+						display block
+						font-size 50px
+						line-height 100%
+						margin 0
+						padding 0 0.3em
+		
+		#slides
+			display block
+			margin 0 auto
+			img
+				display block
+				width 100%
+
+
+
+
+
+#ir_arriba
+	background marron_oscuro
+	bottom 0.5em
+	opacity 0
+	position fixed
+	left 0.5em
+	transition (all 0.3s ease)
+	visibility hidden
+	z-index 31
+	
+	&:hover
+		opacity 1 !important
+		visibility visible !important
+
+#top_bg
+	background #3c0838
+	background unquote("url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNjMDgzOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2YjE2N2UiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)")
+	background linear-gradient(to bottom, #3c0838 0%,#6b167e 100%)
+	filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c0838', endColorstr='#6b167e',GradientType=0 )")
+	height 100%
+	position absolute
+	top 0
+	width 100%
+	z-index -1
+
+#wrapper
+	background unquote("url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUyJSIgc3RvcC1jb2xvcj0iIzcxNzE2YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkYWRhZDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)")
+	background linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(113,113,108,1) 52%,rgba(218,218,208,1) 100%)
+	filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#dadad0',GradientType=0 )")
+
+
+
+/* Las clases en general */
+.content
+	background-color #EBEAE8
+	height auto
+
+	width 100%
+
+.mini_galeria
+	img
+		width 100%
+
+.note
+	background-color #fff
+	border-radius (5px)
+	box-shadow (0 1px 1px 0 rgba(0, 0, 0, 0.2))
+	color #333

@@ -1,0 +1,45 @@
+/* ---- Accordion ---- */
+.accordion
+{
+    background: #fff;
+	border-radius: 5px;         
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+    width: 100%;
+}
+
+.accordion p
+{
+	color: #888; 
+	height:0; 
+	margin-bottom:0px; 
+	overflow:hidden;
+	padding:0; 
+}
+.accordion a
+{
+	display:block; 
+	height:auto; 
+	padding:5px; 
+	line-height:28px; 
+	background-color: #eee; 
+	color:#333; 
+	text-decoration:none; 
+	text-align:center; 
+	border-bottom:1px solid #aaa;
+	border-radius: 5px;
+}
+.accordion a:hover, .accordion a:focus {opacity:.9; color:#000;}
+.accordion a:active {color:#000;}
+.accordion :target + p
+{
+	margin: 0 2px;
+	padding:10px 15px; 
+	height:auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.3);
+}

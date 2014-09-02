@@ -1,0 +1,52 @@
+body
+{
+	background-position: 33% center;
+}
+footer #ir_arriba
+{
+	background: #65B031 !important;
+	color: #F2B65C !important;
+	filter: alpha(opacity=50) !important;	
+}
+footer #ir_arriba:hover, footer #ir_arriba:focus
+{
+	filter: alpha(opacity=100) !important;
+}
+header
+{
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#db000000', endColorstr='#00000000');
+}
+header nav ul
+{
+	height: auto;
+	opacity: 1;
+	visibility: visible;
+}
+header nav ul li
+{
+	display: inline-block;
+}
+section article
+{
+	background: url('../img/fancybox_overlay.png');
+}
+section article figure figcaption
+{
+	background: url('../img/denim.png');
+}
+section article form input, section article form textarea
+{
+	background: #101010;
+}
+.breadcrum h2 
+{
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#7f65B031', endColorstr='#7f65B031');
+}
+.obras article figure:hover img
+{
+	filter: alpha(opacity=50);
+}
+.slideshow .navegacion a
+{
+	background: url('../img/fancybox_overlay.png');
+}
