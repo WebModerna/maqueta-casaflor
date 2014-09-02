@@ -417,6 +417,7 @@ textarea {
   }
 }
 /* Variables y funciones */
+/*@import 'variables.styl'*/
 /* Pack de íconos vectoriales completos */
 @font-face {
   font-family: 'icomoon';
@@ -4565,11 +4566,8 @@ header nav #header_nav {
   -webkit-transition: all 0.3s ease-in-out;
   visibility: hidden;
 }
-header nav #header_nav li {
-  background: rgba(0,0,0,0.5);
-}
 header nav #header_nav li a {
-  background: #222;
+  background: #302310;
   border-radius: 4px;
   -o-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -4583,10 +4581,10 @@ header nav #header_nav li a {
   -ms-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
   -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
   -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
-  color: #dadad0;
+  color: #a8a7b0;
   display: block;
   padding: 0.5em 1em;
-  font-size: 1.3em;
+  font-size: 24px;
   text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
   -o-text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
   -ms-text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
@@ -4607,6 +4605,18 @@ header nav #header_nav li a:focus {
   background: #dadad0;
   color: #222;
 }
+header nav #header_nav .current-menu-item a,
+header nav #header_nav .current_page_item a {
+  background: #000;
+  color: #ba934e;
+}
+header nav #header_nav .current-menu-item a:hover,
+header nav #header_nav .current_page_item a:hover,
+header nav #header_nav .current-menu-item a:focus,
+header nav #header_nav .current_page_item a:focus {
+  background: #000;
+  color: rgba(186,147,78,0.5);
+}
 header nav #header_nav ul {
   padding: 0 auto;
   margin: 0 auto;
@@ -4618,8 +4628,38 @@ header #boton_menu {
   top: 0.3em;
 }
 header #boton_menu #menu {
-  padding: 0.3em 0.5em;
+  box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
+  -o-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
+  -ms-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
+  -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
+  -o-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
+  -ms-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
+  -moz-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
+  -webkit-box-shadow: 0px 1px 0px 0px rgba(255,255,255,0.5) inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset;
+  padding: 0.25em 0.5em 0.3em 0.5em;
   font-size: 1.5em;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+  -o-text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+  -ms-text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+  -moz-text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+  -webkit-text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+  -o-text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+  -ms-text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+  -moz-text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+  -webkit-text-shadow: 0px -1px 0px rgba(0,0,0,0.25);
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+}
+header #boton_menu #menu:hover,
+header #boton_menu #menu:focus {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+header #boton_menu #menu:active {
+  background: rgba(0,0,0,0.25);
 }
 header #logo {
   display: inline-block;
@@ -4711,7 +4751,8 @@ header #slideshow #slides img {
   visibility: hidden;
   z-index: 31;
 }
-#ir_arriba:hover {
+#ir_arriba:hover,
+#ir_arriba:focus {
   opacity: 1 !important;
   -ms-filter: none;
   filter: none;

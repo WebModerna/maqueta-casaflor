@@ -13,6 +13,7 @@ sitemap.xml.gz
 wp-config.php
 codiguero.html
 *.txt
+*.db
 wireframes/
 frameworks/
 css/source/*.js
@@ -29,3 +30,5 @@ css/icomoon/demo-files
 css/icomoon/*.zip
 css/icomoon/*.json
 css/icomoon/*.txt
+css/helpers/*.db
+img/*.db
