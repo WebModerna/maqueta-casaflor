@@ -62,6 +62,10 @@ article
 header
 	padding 0
 	margin 0
+
+	h1
+		font-size 1.5em !important
+
 	nav
 		#header_nav
 			margin 0.5em 0 0 0
@@ -96,6 +100,7 @@ header
 					&:hover, &:focus
 						background #000
 						color rgba(dorado, 0.5)
+						cursor initial
 
 			ul
 				padding 0 auto
@@ -114,7 +119,10 @@ header
 			text-shadow_lindo()
 			opacity 0.8
 
-			&:hover, &:focus
+			&:focus
+				opacity 0.9
+
+			&:hover
 				opacity 1
 
 			&:active
@@ -163,33 +171,48 @@ header
 		display none
 
 	#slideshow
+		margin 0
+		padding 0
+		position relative
+		text-align right
+
+		
 		#barra_control
+			bottom -0.9em
 			display inline-block
+			height 40px
 			margin 0
 			padding 0
-			ul
+			overflow hidden
+			position relative
+					
+			a
+				background blanco_transparente
+				color blanco
+				display inline
+				font-size 70px
 				margin 0
 				padding 0
-				display inline-block
+				position relative
+				opacity 0.6
+				padding 0 0.15em
+				text-shadow_lindo()
+				top -35px
+
+				&:focus
+					opacity 0.8
 				
-				li
-					display inline-block
-					margin 0
-					padding 0
-					text-align center
-					
-					a
-						background blanco_transparente
-						color blanco
-						display block
-						font-size 50px
-						line-height 100%
-						margin 0
-						padding 0 0.3em
-		
+				&:hover
+					opacity 1
+
+				&:active
+					background gris_lila_middle
+
+
 		#slides
 			display block
 			margin 0 auto
+			
 			img
 				display block
 				width 100%
@@ -200,17 +223,30 @@ header
 
 #ir_arriba
 	background marron_oscuro
-	bottom 0.5em
+	bottom 0.3em
+	border-radius(4px)
+	box-shadow_lindo()
+	color blanco
+	display inline-block
+	font-family monotype
+	font-size 40px
+	left 0.3em
 	opacity 0
+	height 45px
+	padding 0 0.3em
 	position fixed
-	left 0.5em
 	transition (all 0.3s ease)
 	visibility hidden
 	z-index 31
-	
-	&:hover, &:focus
-		opacity 1 !important
-		visibility visible !important
+
+#ir_arriba:focus
+	opacity 0.75 !important
+
+#ir_arriba:hover
+	opacity 1 !important
+
+#second_bar
+	display none
 
 #top_bg
 	background #3c0838
@@ -234,7 +270,6 @@ header
 .content
 	background-color #EBEAE8
 	height auto
-
 	width 100%
 
 .mini_galeria

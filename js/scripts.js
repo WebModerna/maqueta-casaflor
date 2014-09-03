@@ -551,7 +551,7 @@ function transicion_abrir(ev)
 		function redimensionador()
 		{
 			var ancho = $(window).width();
-			if (ancho >= 700)
+			if (ancho >= 850)
 			{
 				$('#header_nav').css(abrir);
 			} else {
