@@ -1,3 +1,65 @@
+/* Colores nuevos */
+turquesa = #1abc9c
+esmeralda = #2ecc71
+azul_twitter = #3498db
+amatista = #9b59b6
+azul_asfalto = #34495e
+
+verde_mar = #16a085
+verde_neferteris = #27ae60
+azul_feisbuc = #2980b9
+morado_wisteria = #8e44ad
+medianoche = #2c3e50
+
+amarillo_flor = #f1c40f
+carrot = #e67e22
+rojo_ladrillo = #e74c3c
+gris_nube = #ecf0f1
+gris_concreto = #95a5a6
+
+naranja = #f39c12
+naranja_fanta = #d35400
+rojo_google = #c0392b
+plateado = #bdc3c7
+gris_absesos = #7f8c8d
+
+/* Variables de colores viejos */
+azul_google = #4285F4
+blanco = #eee
+blanco_grisaceo = #EBEAE8
+blanco_lila = #F3E2F2
+blanco_lila_logo = #FFE9FF
+blanco_normal = #F6F7F2
+blanco_transparente = rgba(255,255,255,0.5)
+celeste_twitter = #4DA3C2
+dorado = #BA934E
+gris_texto = #7C7C7A
+gris_bottom = #E1D3EC
+gris_claro = #DADAD0
+gris_lila_middle = #816699
+gris_lindo = #A8A7B0
+gris_oscuro_letra = #636361
+gris_oscuro_logo = #F3E2F2
+gris_top = #E2D2EC
+lila = #9C8DAC
+marron_claro = #68512E
+marron_normal = #402F15
+marron_oscuro = #302310
+morado_bottom = #6B167E
+morado_claro = #BB72D3
+morado_oscuro = #540A6D
+morado_primario = #8600AF
+morado_top = #3C0838
+naranja_claro = #F2B65C
+naranja_primario = #FB9900
+naranja_oscuro = #B7720B
+negro = #222
+negro_re_transparente = rgba(0,0,0,0.25)
+negro_transparente = rgba(0,0,0,0.5)
+verde_claro = #A6E27A
+verde_primario = #65B031
+verde_oscuro = #49891B
+
 /* Funciones Comunes a todos/as */
 background-size()
 	background-size arguments
@@ -22,18 +84,20 @@ box-sizing()
 	-ms-box-sizing border-box
 	-moz-box-sizing border-box
 	-webkit-box-sizing border-box
+
 box-shadow_lindo()
-	box-shadow 0px 1px 0px 0px blanco_transparente inset, 0px -15px 15px 0px negro_re_transparente inset
-	-o-box-shadow 0px 1px 0px 0px blanco_transparente inset, 0px -15px 15px 0px negro_re_transparente inset
-	-ms-box-shadow 0px 1px 0px 0px blanco_transparente inset, 0px -15px 15px 0px negro_re_transparente inset
-	-moz-box-shadow 0px 1px 0px 0px blanco_transparente inset, 0px -15px 15px 0px negro_re_transparente inset
-	-webkit-box-shadow 0px 1px 0px 0px blanco_transparente inset, 0px -15px 15px 0px negro_re_transparente inset
+	box-shadow 0px 1px 1px 0px blanco_transparente inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-o-box-shadow 0px 1px 1px 0px blanco_transparente inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-ms-box-shadow 0px 1px 1px 0px blanco_transparente inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-moz-box-shadow 0px 1px 1px 0px blanco_transparente inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+	-webkit-box-shadow 0px 1px 1px 0px blanco_transparente inset, 0px -15px 15px 0px rgba(0,0,0,0.25) inset
+
 box-shadow_texto()
-	box-shadow 0px -1px 0px negro_re_transparente
-	-o-box-shadow 0px -1px 0px negro_re_transparente
-	-ms-box-shadow 0px -1px 0px negro_re_transparente
-	-moz-box-shadow 0px -1px 0px negro_re_transparente
-	-webkit-box-shadow 0px -1px 0px negro_re_transparente
+	box-shadow 0px -1px 0px rgba(0,0,0,0.25)
+	-o-box-shadow 0px -1px 0px rgba(0,0,0,0.25)
+	-ms-box-shadow 0px -1px 0px rgba(0,0,0,0.25)
+	-moz-box-shadow 0px -1px 0px rgba(0,0,0,0.25)
+	-webkit-box-shadow 0px -1px 0px rgba(0,0,0,0.25)
 column-count()
 	column-count arguments
 	-o-column-count arguments
@@ -46,6 +110,32 @@ column-gap()
 	-ms-column-gap arguments
 	-moz-column-gap arguments
 	-webkit-column-gap arguments
+
+
+/* Una función que crea opacidad y soporte para IE8 */
+opacity(n)
+	opacity n
+	if support-for-ie
+		filter unquote('alpha(Opacity=' + round(n * 100) + ')')
+		filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')
+		/*-ms-filter unquote('progid:DXImageTransform.Microsoft.Alpha(Opacity=' + round(n * 100) + ')')*/
+
+/* Animaciones - Definición de los keyframes. Solo una prueba */
+$keyframe-name = pulse
+@keyframes foo {$keyframe-name}
+	for i in 0..10
+		{10% * i}
+			width (i/10)
+/*
+@keyframes rotador
+	0%
+		transform(rotateZ(0deg))
+	25%
+		transform(rotateZ(0deg))
+	50%
+
+*/
+
 text-shadow()
 	text-shadow arguments
 	-o-text-shadow arguments
@@ -53,11 +143,11 @@ text-shadow()
 	-moz-text-shadow arguments
 	-webkit-text-shadow arguments
 text-shadow_lindo()
-	text-shadow 0px -1px 0px negro_re_transparente
-	-o-text-shadow 0px -1px 0px negro_re_transparente
-	-ms-text-shadow 0px -1px 0px negro_re_transparente
-	-moz-text-shadow 0px -1px 0px negro_re_transparente
-	-webkit-text-shadow 0px -1px 0px negro_re_transparente
+	text-shadow 0px -1px 0px rgba(0,0,0,0.25)
+	-o-text-shadow 0px -1px 0px rgba(0,0,0,0.25)
+	-ms-text-shadow 0px -1px 0px rgba(0,0,0,0.25)
+	-moz-text-shadow 0px -1px 0px rgba(0,0,0,0.25)
+	-webkit-text-shadow 0px -1px 0px rgba(0,0,0,0.25)
 transform()
 	transform arguments
 	-o-transform arguments
@@ -70,3 +160,10 @@ transition()
 	-ms-transition arguments
 	-moz-transition arguments
 	-webkit-transition arguments
+
+@font-face
+	font-family 'Open Sans'
+	font-style normal
+	font-weight 400
+	src: url('fonts/open-sans.eot')
+	src: local('OpenSans'), url('fonts/open-sans.eot') format('embedded-opentype'), url('fonts/open-sans.ttf') format('truetype'), url('fonts/open-sans.svg#OpenSans') format('svg'), url('fonts/open-sans.woff') format('woff')

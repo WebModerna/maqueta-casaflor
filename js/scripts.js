@@ -151,8 +151,8 @@ jQuery.extend( jQuery.easing,
 	openEasing 	: 'easeInOutBack',
 	closeEasing : 'easeInOutBack',
 
-	nextEasing	: 'easeInBounce',
-	prevEasing 	: 'easeInBounce',
+	nextEasing	: 'easeInOutElastic',
+	prevEasing 	: 'easeInOutElastic',
 
 	nextSpeed 	: 'slow',
 	prevSpeed 	: 'slow',
@@ -551,7 +551,7 @@ function transicion_abrir(ev)
 		function redimensionador()
 		{
 			var ancho = $(window).width();
-			if (ancho >= 850)
+			if (ancho >= 960)
 			{
 				$('#header_nav').css(abrir);
 			} else {

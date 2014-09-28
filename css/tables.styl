@@ -4,26 +4,20 @@ table {
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 	border: solid #ccc 1px;
 	border-left: none;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	box-shadow: 0 1px 2px #d1d1d1;
-	-moz-box-shadow: 0 1px 2px #d1d1d1;
-	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	border-radius(5px)
+	box-shadow(0 1px 2px #d1d1d1)
 }   
 td, th {border-top: 1px solid #ccc; border-left: 1px solid #ccc; padding: 10px; text-align: left;}
 th {
 	background-color: #f0f0f0;
-	box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
-	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;  
-	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+	box-shadow(0 1px 0 rgba(255,255,255,.8) inset)
 	border-top: none;
-	text-shadow: 0 1px 0 rgba(255,255,255,.5);
-	font-size: 14px; 
+	text-shadow(0 1px 0 rgba(255,255,255,.5))
+	font-size: 1em; 
 	line-height: 24px;
 	text-align: center;
 }
-td{font-size:14px;}
+td{font-size:1em;}
 table tr:first-child th:first-child{
 	border-top-left-radius: 5px;
 	-moz-border-radius-topleft: 5px;
@@ -41,7 +35,7 @@ table tr:last-child td:first-child{
 }
 table tr:last-child td:last-child{
 	border-bottom-right-radius: 5px;
-	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottom-right: 5px;
 	-webkit-border-bottom-right-radius: 5px;
 }
 table tr.even td{background-color: #fafafa;}

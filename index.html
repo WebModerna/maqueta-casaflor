@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html type="text/html" lang="es">
+<html lang="es">
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<meta http-equiv="cleartype" content="on" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<meta name="description" content="Es un espectacular complejo ubicado en ...bla bla bla bla..." />
+	<meta name="keywords" content="complejo, cabañas, hotel, campo, pileta, traslasierra, villa, cura, brochero, cura brochero, casaflor" />
 	
-	<title>Las Cabañas | Complejo Casaflor</title>
-	<link rel="stylesheet" type="text/css" href="css/style.min.css" media="all" />
-	
+	<title>Complejo Casaflor | Cabañas y hotel de campo</title>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" type="text/css" href="css/style.min.css" />
+
 	<!-- favicones -->
 	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
@@ -30,184 +34,251 @@
 	<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-	<!-- scripts -->
 	<script type="text/javascript" src="js/scripts.js"></script>
-	<script type="text/javascript" src="js/datepicker-completo.js"></script>
+
+	<!--[if IE 8]>
+	<script type="text/javascript" src="js/html5.js"></script>
+	<script type="text/javascript" src="js/respond.js"></script>
+	<script type="text/javascript" src="js/selectivizr-min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/styleIE8.css" />
+	<![endif]-->
+
+	<!--[if gte IE 9]><style type="text/css">.gradient {filter:none !important;}</style><![endif]-->
 </head>
-<body>
-	<div id="top_bg" class="row"></div>
+<body class="gradient">
+<header class="gradient">
+	<div class="wrapper">
+		<div class="text-left">
+			
+		<div id="logo">
+			<figure>
+				<a href="index.html">
+					<img src="img/logo.png" alt="Logo Complejo CasaFlor" />
+				</a>
+				<figcaption>
+					Complejo <span class="icon-star-doble">CasaFlor</span>
+					<small>Cabañas & Hotel de Campo</small>
+				</figcaption>
+			</figure>
+		</div><!-- #logo -->
 	
-	<section id="wrapper" class="row">
-		<header class="row text-left">
-			
-			<div id="logo">
-				<div>
-					<figure>
-						<a href="index.html">
-							<img src="img/logo.png" alt="Complejo CasaFlor" />	
-						</a>
-					</figure>
-					<div id="nombre_logo">
-						Complejo <span>CasaFlor</span><i class="icon-star3"></i><i class="icon-star3"></i>
-					</div>
-					<div>Cabañas & Hotel de Campo</div>
-					<div>
-						Villa Cura Brochero | Valle de Traslasierra
-					</div>
-				</div>
-			</div><!-- #logo -->
+		<div id="search" class="">
+			<form class="hform" name="" id="search" action="">
+					<input class="post" type="text" placeholder="husmear..." name="" id="" />
+					<span type="submit" class="post icon-search" name=""></span>
+			</form>
+		</div>
+		</div><!-- .text-left -->
 
-			<div id="mensaje_top_site">Tel 03447 - 3234234/04879238</div>
-			
-			<!-- Barra de navegación -->
-			<div id="boton_menu">
-				<button id="menu" href="#" class="magenta icon-menu"></button>
-			</div>
-			<nav>
-				<ul id="header_nav">
-					<li>
-						<a href="#" class="blue">El Complejo</a>
-					</li>
-					<ul>
-						<li><a href="#">El Hotel</a></li>
-						<li class="current-menu-item current_page_item"><a href="#">Las Cabañas</a></li>
-						<li><a href="#">El Quincho</a></li>
-						<li><a href="#">El Predio</a></li>
-						<li><a href="#">Nosotros</a></li>
-					</ul>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Ubicación</a></li>
-					<li><a href="#">Tarifas y Consultas</a></li>
-				</ul>
-			</nav>
-
-			<!-- SlideShow -->
-			<div id="slideshow">
-				<div id="slides" class="cycle-slideshow slideshow" 
-			data-cycle-next=".next"
-			data-cycle-prev=".back"
-			data-cycle-timeout=6000
-			data-cycle-speed=1000
-		>
-					<img src="img/1.jpg" alt="1" />
-					<img src="img/2.jpg" alt="2" />
-					<img src="img/3.jpg" alt="3" />
-				</div>
-				<div id="barra_control">
-					<a class="back" href="#">‹</a>
-					<a class="next" href="#">›</a>
-				</div>
-			</div>
-
-		</header>
-
-		<article id="content"><!-- el contenido -->
-			<h1>COMPLEJO CASAFLOR - CABAÑAS Y HOTEL DE CAMPO - Abierto todo el año</h1>
-			<div id="second_bar">
-				<h2>Las Cabañas</h2>
-				<ul>
-					<li><a href="#">Las Cabañas</a></li>
-					<li><a href="#">El Hotel</a></li>
-					<li><a href="#">El Predio</a></li>
-					<li><a href="#">El Quincho</a></li>
-				</ul>
-			</div><!-- #second_bar -->
-			<div class="el_articulo">
-				<h4 class="resumen alert">
-					Contamos con 6 cabañas para 4 personas y otras 2 con capacidad para 5 personas.
-					En ambos casos son dos ambientes: un dormitorio con cama matrimonial y un amplio estar con camas marineras.
-				</h4>
-				<div class="mini_galeria">
-					<a href="#"><img src="img/1.jpg" alt="1" /></a>
-					<a href="#"><img src="img/2.jpg" alt="2" /></a>
-					<a href="#"><img src="img/3.jpg" alt="3" /></a>
-				</div><!-- .mini_galeria -->
-
-				<div class="content">
-					Opciones:
-					<ul>
-						<li>Cabañas para 2 a 4 personas.</li>
-						<li>Cabañas para 5 personas.</li>
-					</ul>
-					<h5>Equipamiento</h5>
-					<ul>
-						<li>Vajilla completa.</li>
-						<li>Sommier matrimonial.</li>
-						<li>TV por cable.</li>
-						<li>Aire acondicionado y ventilador de techo.</li>
-						<li>Calefacción por tiro balanceado/ Split Frío- Calor.</li>
-						<li>Servicio de mucama y ropa blanca.</li>
-						<li>Teléfono para comunicación interna.</li>
-						<li>Galería con sillones y vista panorámica.</li>
-						<li>Servicio de bar y comidas caseras (temporada alta).</li>
-						<li>Todas tienen galería con vista panorámica.</li>
-						<li>Cocheras cubiertas y asadores individuales.</li>
-					</ul>
-					<h5>Servicios:</h5>
-					<ul>
-						<li>Piscina de 120 m2 cercada con amplio 		solarium.</li>
-						<li>6 ha de parque con bellas vistas panorámicas y 	añosos algarrobos.</li>
-						<li>Quincho con amplia galería, con mesas de 	metegol, ping pong y asador para reuniones.</li>
-						<li>Wi Fi en todo el complejo.</li>
-						<li>Cancha de volley.</li>
-						<li>Juegos infantiles - arenero cercado.</li>
-						<li>Servicio de bar y comidas caseras en 		Temporada Alta.</li>
-						<li>Desayuno serrano, con mermeladas caseras y 	variada panificación</li>
-						<li>Servicio de mucama y ropa blanca (excepto los 	días Domingo).</li>
-						<li>Mensajería e información turística.</li>
-						<li>Circuitos de caminatas dentro del predio, huerta y frutales.</li>
-					</ul>
-				</div>
-
-			</div><!-- .el_articulo -->
-		</article><!-- #content -->
-
-		<aside><!-- Barra del fondo -->
-			<section>
-				<h4>Inicio</h4>
-				<ul>
-					<li><a href="">Vila pANCHO</a></li>
-					<li><a href="">Activitys</a></li>
-					<li><a href="">EventiozZ</a></li>
-				</ul>
-			</section>
-
-			<section>
-				<h4>El Complejucho</h4>
-				<ul>
-					<li><a href="">El Hotelucho</a></li>
-					<li class="current-page-item"><a href="">Las Cabañeras</a></li>
-					<li><a href="">El Precio</a></li>
-					<li><a href="">El Quinchaje</a></li>
-				</ul>
-			</section>
-
-			<section>
-				<h4>Desubicación</h4>
-				<p>En loma del quincho aogado..a la vuelta. Y ahí, seguro que no es.</p>
-			</section>
-
-			<section>
-				<h4>Tarifas y Promociones</h4>
-				<p>Promociones durante todo el año. Precio especial para contingentuchos XD</p>
-			</section>
-		</aside>
+		<div id="boton_menu">
+			<button id="menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div><!-- #boton_menu -->
 		
+		<nav><!-- El menú de navegación en sí mismo -->
+			<ul id="header_nav">
+				<li class="current-menu-item current_page_item">
+					<a class="gradient" href="index.html">Inicio</a>
+				</li>
+				<li class="">
+					<a class="gradient" href="hotel.html">El Hotel</a>
+				</li>
+				<li class="">
+					<a class="gradient" href="cabanas.html">Las Cabañas</a>
+				</li>
+				<li class="">
+					<a class="gradient" href="quincho.html">El Quinchaje</a>
+				</li>
+				<li class="">
+					<a class="gradient" href="predio.html">El Predio</a>
+				</li>
+				<li>
+					<a class="gradient" href="servicios.html">Servicios</a>
+				</li>
+				<li>
+					<a class="gradient" href="ubicacion.html">Ubicación</a>
+				</li>
+				<li>
+					<a class="gradient" href="tarifas-y-consultas.html">Tarifas y Consultas</a>
+				</li>
+				<li>
+					<a class="gradient" href="noticias.html">Noticias</a></li>
+				<li>
+					<a class="gradient" href="quienes-somos.html">Quienes Somos</a>
+				</li>
+			</ul><!-- #header_nav -->
+		</nav>
+	</div>
+	<!-- Un lindo y bonito slideshow para deleitar -->
+	<div id="slideshow" class="cycle-slideshow slideshow wrapper" 
+		data-cycle-caption="#alt-caption"
+	    data-cycle-caption-template="{{alt}}"
+		data-cycle-fx=tileSlide
+		data-cycle-next=".next"
+		data-cycle-prev=".back"
+		data-cycle-pause-on-hover="true"
+		data-cycle-tile-vertical="false"
+		data-cycle-timeout="4500"
+		data-cycle-tile-count="4"
+		data-cycle-speed="500" >
+	
+		<img src="img/1.jpg" alt="casas de sobra">
+		<img src="img/2.jpg" alt="Un gran complejo para disfru4ar">
 
-		<footer>
-			<p id="direccion">
-				Camino a Las Maravillas s/n - Villa Cura Brochero - Valle de Traslasierra - Córdoba
-			</p>
+		<div id="alt-caption"></div>
+		
+		<div class="navegacion">
+			<a title="←" class="back" href="#">‹</a>
+			<a title="→" class="next" href="#">›</a>
+		</div>				
+	</div><!-- #slideshow -->
+</header>
+
+<div class="wrapper plateado">
+	<section class="seccion_gris">
+		<div class="home_text space-bot">
+			<article class="text-left">
+				<h2 class="">Lorem ipsum dolor sit amet</h2>
+				<figure class="figure">
+					<img src="img/big-1.jpg">
+				</figure>
+				<p class="">Lorem ipsum 4olor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</article>
+		</div>
+		<div class="wrapper space-top">
+			<article class="columnas-4">
+				<h3><a href="hotel.html">El Hotel</a></h3>
+				<figure class="figure">
+					<a href="hotel.html">
+						<img src="img/big-2.jpg" alt="Algo">
+					</a>
+					<figcaption>
+						El Hotelcito
+					</figcaption>
+				</figure>
+				<p>
+					Cuenta con imcomparables requetesuper habitaciones de hasta 879,23 personas.
+					<a class="ver_mas icon-plus" href="hotel.html"></a>
+				</p>
+			</article>
+
+			<article class="columnas-4">
+				<h3><a href="cabanas.html">Las Cabañas</a></h3>
+				<figure class="figure">
+					<a href="cabanas.html">
+						<img src="img/big-1.jpg" alt="Algo">
+					</a>
+					<figcaption>
+						Las Cabañazas
+					</figcaption>
+				</figure>
+				<p>Hecho de paja natural ocn un poquito de aderezos de la artificial. Ideal para combatir la calvicie avanzada y la peladura crónica..</p>
+				<a class="ver_mas icon-plus" href="cabanas.html"></a>
+			</article>
+			
+			<article class="columnas-4">
+				<h3><a href="quincho.html">El Quincho</a></h3>
+				<figure class="figure">
+					<a href="quincho.html">
+						<img src="img/big-2.jpg" alt="Algo">
+					</a>
+					<figcaption>
+						El Quinchaje
+					</figcaption>
+				</figure>
+				<p>Hecho de paja natural ocn un poquito de aderezos de la artificial. Ideal para combatir la calvicie avanzada y la peladura crónica..</p>
+				<a class="ver_mas icon-plus" href="quincho.html"></a>
+			</article>
+			
+			<article class="columnas-4">
+				<h3><a href="predio.html">El Predio</a></h3>
+				<figure class="figure">
+					<a href="predio.html">
+						<img src="img/big-1.jpg" alt="Algo">
+					</a>
+					<figcaption>
+						est laborum
+					</figcaption>
+				</figure>
+				<p>Ubicado a las orillas del río y un poco del mar. Se puede disfrutar de piletas con agua pesada (tiene Deuterio y Tritio, 2 isótopos del Hidrógeno; comúnmente utilizado para refrigerar los reactores de las centrales nucleares).</p>
+				<a class="ver_mas icon-plus" href="predio.html"></a>
+			</article>
+		</div>
+	</section>
+	
+	<aside class="">
+		<section class="redes-sociales">
+			<h4>Seguinos en:</h4>
 			<p>
-				Síguenos en: <button class="icon-facebook blue"></button> <button class="icon-twitter skyblue"></button>
-				<button class="icon-feed orange"></button>
+				<a title="Facebook" href="#" class="icon-facebook blue big"></a>
+				<a title="Twitter" href="#" class="icon-twitter skyblue"></a>
+				<a title="Google+" href="#" class="icon-googleplus red"></a>
+				<a title="Feeds" href="#" class="icon-feed orange"></a>
 			</p>
-			<p id="copyright">
-				Complejo CasaFlor 2014 - Desarrollado por <a href="http://www.webmoderna.com.ar" target="_blank">WebModerna</a>
+		</section>
+
+		<section>
+			<h4>Estamos en:</h4>
+			<address>
+				<ul>
+					<li><i class="icon-road"> </i>Camino a las Maravillas s/n</li>
+					<li><i class="icon-location2"> </i>Villa Cura Brochero</li>
+					<li><i class="icon-earth"> </i>Traslasierra - Córdoba</li>
+					<li><i class="icon-location"> </i>Longaniza 123° 32' 43,98"</li>
+					<li><i class="icon-location"> </i>Latencia -56° 12' -23,98"</li>
+					<li><i class="icon-phone"> </i>+549 3544 470984</li>
+					<li><i class="icon-mobile2"> </i>+549 3544 3061283</li>
+				</ul>
+			</address>
+		</section>
+
+		
+		<section>
+			<h4><a href="#">Promoción de la semana:</a></h4>
+			<figure class="polaroid figure">
+				<a href="#">
+					<img src="img/big-4.jpg" alt="el puente loco" />
+				</a> 
+			</figure>
+			<p>
+				Rebaja del 150% en más o menos algunos precios. Serán tan pero tan dudosos que la probabilidad de poder conseguir un descuento será del -10% ¬¬
+				<a class="ver_mas icon-plus" href="predio.html"></a>
 			</p>
-		</footer>
-	</section><!-- #wrapper -->
-	<!-- <button id="ir_arriba" class="magenta icon-arrow-up"></button> -->
-	<a id="ir_arriba" href="#">^</a>
+		</section>
+
+		<section>
+			<h4>Mapa de Sitio</h4>
+			<ul>
+				<li class="current-menu-item current_page_item"><a href="index.html">Home</a></li>
+				<li><a href="hotel.html">El Hotel</a></li>
+				<li><a href="cabanas.html">Las Cabañas</a></li>
+				<li><a href="predio.html">El Predio</a></li>
+				<li><a href="quincho.html">El Quincho</a></li>
+				<li><a href="servicios.html">Servicios</a></li>
+				<li><a href="tarifas.html">Tarifas y Consultas</a></li>
+				<li><a href="ubicacion.html">Desubicación</a></li>
+				<li><a href="noticias.html">Noticias</a></li>
+				<li><a href="quienessomos.html">Blog</a></li>
+			</ul>
+		</section>
+	</aside>
+
+	<footer>
+		<div class="copyright">
+			<p>
+				Complejo CasaFlor 2014 - Todos los Torcidos Reservados | Desarrollado por <a href="http://www.webmoderna.com.ar" target="_blank">WebModerna</a>
+			</p>
+		</div>
+		<a id="ir_arriba" href="#">^</a>
+	</footer>
+</div><!-- .wrapper -->
 </body>
 </html>

@@ -12,6 +12,7 @@ wp-content/backups/
 sitemap.xml.gz
 wp-config.php
 codiguero.html
+index2.html
 *.txt
 *.db
 wireframes/
