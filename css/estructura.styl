@@ -1,7 +1,5 @@
 /* Las estructuras */
 body
-	/*background linear-gradient(to bottom, #ffffff 27%,#e8b2ea 55%,#ffffff 100%)
-	filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fff4fc',GradientType=0 )")*/
 	background #e1d1eb
 	background linear-gradient(to bottom, #ffffff 0%,#e1d1eb 23%,#816699 59%,#e0d4ea 100%)
 	background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(23%,#e1d1eb), color-stop(59%,#816699), color-stop(100%,#e0d4ea))
@@ -22,8 +20,9 @@ body
 aside
 	color negro
 	display block
-	margin 0.5em 0
+	float none
 	font-size 0.9em
+	margin 0.5em 0
 	
 	section
 		text-align left
@@ -36,10 +35,13 @@ aside
 			margin-top 0
 
 			li
-				border-bottom 1px dotted gris_claro
+				border-top 1px dotted gris_concreto
 				list-style none
 				padding 0.5em 0
 
+				&:first-child
+					border-top none
+				
 				a
 					color gris_lila_middle
 					display block
@@ -47,6 +49,7 @@ aside
 
 					&:hover
 						color gris_lindo
+
 
 			.current_page_item, .current-menu-item
 				a
@@ -87,16 +90,17 @@ footer
 			color 
 			text-decoration underline
 
+h1, h2, h3, h4, h5, h6
+	font-family 'Fjord'
+
 header
-	/*background #600a96
-	background linear-gradient(to bottom, #2c1833 0%,#600a96 8%,#600a96 100%);
-	filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c1833', endColorstr='#600a96',GradientType=0 )")*/
 	background #40073c
 	background linear-gradient(to bottom, #40073c 0%,#540f5f 26%,#6b1580 100%)
 	background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#40073c), color-stop(26%,#540f5f), color-stop(100%,#6b1580))
 	filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#40073c', endColorstr='#6b1580',GradientType=0 )")
 
-
+section
+	overflow hidden
 
 /* Los id's */
 #boton_menu
@@ -115,6 +119,7 @@ header
 		overflow hidden
 		padding 0.2em 0.25em
 		width 45px
+		z-index 1987
 
 		&:focus
 			opacity 0.9
@@ -158,7 +163,6 @@ header
 			overflow hidden
 			text-decoration none
 			text-shadow_lindo()
-			/*transition(all ease-in-out 0.3s)*/
 			transition(none)
 
 			&:after
@@ -168,11 +172,7 @@ header
 
 			&:hover
 			&:focus
-				/*background morado_wisteria*/
 				background #cedce7
-				/*background linear-gradient(to bottom, #cedce7 0%,#596a72 100%)
-				background -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cedce7), color-stop(100%,#596a72))
-				filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=0 )")*/
 				box-shadow(0px 0px 20px 10px negro_re_transparente inset)
 
 
@@ -193,6 +193,15 @@ header
 		margin 0 auto
 
 
+#home_col
+	.columnas-4
+		&:first-child
+			border-top none
+		
+		&:last-child
+			border-bottom none
+
+
 #ir_arriba
 	background rgba(marron_oscuro, 0.4)
 	bottom 0.2em
@@ -202,7 +211,7 @@ header
 	display inline-block
 	font-family monotype
 	font-size 40px
-	left 0.2em
+	right 0.2em
 	opacity 0
 	height 40px
 	padding 0 0.3em 0.1em 0.3em
@@ -384,15 +393,79 @@ header
 	p
 		margin 0.5em
 
+.contacto
+	.tarifa
+		font-size 14px
+		overflow hidden
+		
+		th[colspan="4"]
+			color #fff
+			background morado_wisteria
+			text_shadow_lindo()
+		td
+			padding auto
+
+				
+
+.contenido
+	overflow hidden
+	h3
+		font-size 1em
+
+	.formulario
+		input
+		label
+		textarea
+			float none
+			width 90%
+
+.galeria
+	border-bottom 1px solid #fff
+	padding-bottom 1em
+	text-align center
+
+	.figure
+		float none
+		display inline-block
+		margin-bottom 4px
+		max-width 265px
+		overflow hidden
+		vertical-align top
+
+
+.texto
+	border-top 3px solid dorado
+	color gris_texto
+	display block
+	float none
+	padding-top 0.5em
+
+	h3, h4, h5, h6
+		color morado_claro
+		border-bottom 1px dotted gris_claro
+		margin-bottom 0.2em
+
+
+.current-menu-item, .current_page_item
+	a
+		&:hover, &:focus
+			cursor initial
+
 .figure
 	box-sizing()
 
 	img
 		width 100%
 
+
+
 .home_text
 	background #F8F8F6
+	background linear-gradient(to bottom, rgba(248,248,246,0.2) 0%,rgba(248,248,246,1) 46%,rgba(248,248,246,1) 100%)
+	background -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,248,246,0.2)), color-stop(46%,rgba(248,248,246,1)), color-stop(100%,rgba(248,248,246,1)))
+	filter unquote("progid:DXImageTransform.Microsoft.gradient( startColorstr='#33f8f8f6', endColorstr='#f8f8f6',GradientType=0 )")
 	padding 1em 0.5em
+	overflow hidden
 
 	article
 		color dorado
@@ -443,24 +516,117 @@ header
 		.icon-twitter
 			background celeste_twitter
 
-
+.search
+	article
+		color gris_texto
+	
 .seccion_gris
 	background none
 
-.ver_mas
-	border-radius( 50% )
-	box-shadow_lindo()
-	color naranja_fanta
-	display inline-block
-	float right
-	margin 1em
-	padding 0.5em
-	text-decoration none
-	text_shadow_lindo()
+.second_nav
+	display none
+	float left
+	text-align left
+	vertical-align top
+	width 24%
 
-	&:hover
-		color gris_absesos
-		transform(rotate(90deg))
+	h2
+		border-bottom 2px solid gris_nube
+		margin 0 0.5em auto 0.5em
+		padding-bottom 0.5em
+		color morado_claro
+
+	
+	ul
+		font-family 'Fjord'
+		padding 0
+		
+		li
+			list-style none
+			
+			&:before
+				content "›"
+				font-size 1.5em
+				padding-right 0.5em
+
+			a
+				color gris_absesos
+				text-transform uppercase
+				text-decoration none
+				letter-spacing -1px
+				transition(all 0.3s ease-in-out)
+
+				&:hover, &:focus
+					color dorado
+
+		.current-menu-item, .current_page_item
+			a, &:before
+				color dorado
+
+.etiquetas
+	background #eee
+	border-radius(4px)
+	color gris_concreto
+	display block
+	font-family 'Fjord'
+	font-size 0.9em
+	padding 0.2em 0.5em
+	overflow hidden
+
+	a
+		color gris_concreto
+		padding-right 0.5em
+
+	i
+		padding-right 0.2em
+
+
+.inline-block
+	margin 0
+	padding 0
+
+	li
+		display inline-block
+		float left
+		padding 0 0.5em
+		
+		&:first-child
+			border-left none
+		&:last-child
+			border-right none
+
+
+.tipo_blog
+	h3
+		strong
+			color rojo_ladrillo
+	.search
+		article
+			border-top 1px solid #fff
+			border-bottom 1px solid #bbb
+			&:first-child
+				border-top none
+			&:last-child
+				border-bottom none
+
+			h3, h4, h5, h6
+				display inline-block
+				border-bottom none
+				margin-top 0.7em
+
+
+.ver_mas
+	float right
+	margin 0 0.5em 0.5em 0.5em
+	&:after
+		content "›"
+		display inline-block
+		padding-left 0.5em
+
+
+
+.width-200px
+	width 200px
 
 .wrapper
 	margin 0 auto
@@ -490,14 +656,32 @@ header
 		form
 			width auto
 
+	.contacto
+		.tarifa
+			font-size 16px
 
+	.inline-block
+		li
+			border-right 1px solid #f9f9f9
+			border-left 1px solid gris_claro
 
 @media only screen and (min-width: 600px)
 	#search
 		margin-right 3em
+		
 		form
 			input[type="text"]
 				width auto
+
+	.contenido
+		.texto
+			box-sizing()
+			color gris_texto
+	.columnas-2
+			column-count(2)
+			column-gap(2em)
+
+
 
 @media only screen and (min-width: 720px)
 	aside
@@ -586,6 +770,11 @@ header
 					background none
 					box-shadow(none)
 					color dorado
+
+
+	#home_col
+		margin-top 1.5em
+			
 	
 	#logo
 		border 4px solid blanco_normal
@@ -632,16 +821,16 @@ header
 			background rgba(248,248,246,0.7)
 			bottom 0
 			color morado_wisteria
-			left 1%
-			right 1%
 			display block
 			font-size 1.2em
 			height 35px
+			left 1%
 			margin 0 auto
 			max-width 1100px
 			opacity 1
 			padding 0.5em auto
 			position absolute
+			right 1%
 			text-transform uppercase
 			vertical-align baseline
 			visibility visible
@@ -667,12 +856,23 @@ header
 				top -6px
 				vertical-align middle
 				width 40px
+
+	.contenido
+		border-left 1px solid rgba(dorado, 0.5)
+		padding-left 0.5em
+		
+		h3
+			margin-top 0
+	
 	.columnas-4
 		max-width 24%
 
 	.home_text
 		margin auto
 		max-width 1100px
+
+	.second_nav
+		display inline-block
 
 @media only screen and (min-width: 1140px)
 	#header_nav

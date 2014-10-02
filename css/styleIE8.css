@@ -1,52 +1,27 @@
-body
+header #header_nav li a
 {
-	background-position: 33% center;
+	filter: none;
 }
-footer #ir_arriba
+#logo figure figcaption span
 {
-	background: #65B031 !important;
-	color: #F2B65C !important;
-	filter: alpha(opacity=50) !important;	
+	color: #ededed !important;
+	font-weight: bolder;
 }
-footer #ir_arriba:hover, footer #ir_arriba:focus
+#ir_arriba
 {
-	filter: alpha(opacity=100) !important;
+	background: url("../img/transparent_1x1.png");
+	visibility: visible !important;
 }
-header
+#slideshow #alt-caption
 {
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#db000000', endColorstr='#00000000');
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3f8f8f6', endColorstr='#b3f8f8f6',GradientType=0 );
 }
-header nav ul
+#slideshow .navegacion a
 {
-	height: auto;
-	opacity: 1;
-	visibility: visible;
+	background: url("../img/fancybox_overlay.png");
 }
-header nav ul li
+#slideshow .navegacion a:hover,
+#slideshow .navegacion a:active
 {
-	display: inline-block;
-}
-section article
-{
-	background: url('../img/fancybox_overlay.png');
-}
-section article figure figcaption
-{
-	background: url('../img/denim.png');
-}
-section article form input, section article form textarea
-{
-	background: #101010;
-}
-.breadcrum h2 
-{
-	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#7f65B031', endColorstr='#7f65B031');
-}
-.obras article figure:hover img
-{
-	filter: alpha(opacity=50);
-}
-.slideshow .navegacion a
-{
-	background: url('../img/fancybox_overlay.png');
+	background: url("../img/transparent_1x1.png");
 }
