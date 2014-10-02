@@ -1,5 +1,10 @@
 /* ---- Buttons ---- */
-button {
+.boton
+	text-decoration none
+	text_shadow_lindo()
+
+	
+.boton, button {
 	display:inline-block;*display:inline;
 	padding:7px 20px;
 	margin-bottom:10px;*margin-left:.3em;
@@ -17,114 +22,114 @@ button {
 	background-image: linear-gradient(top, #f9f9f9, #efefef);
 	filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorStr='#f9f9f9', EndColorStr='#efefef')");
 }
-button:hover, button:active{
+.boton:hover, .boton:active, button:hover, button:active{
 	background:#eee;
 	background:-webkit-gradient(linear, left top, left bottom, from(#eee), to(#f8f8f8));
 	background: linear-gradient(top, #eee, #f8f8f8);
 }
-button.large{padding:10px 35px; font-size:15px;}
-button.small{padding:3px 13px; font-size:13px;}
+.boton.large, button.large{padding:10px 35px; font-size:15px;}
+.boton.small, button.small{padding:3px 13px; font-size:13px;}
 
-button.skyblue{ /* --- skyblue color button --- */
+.boton.skyblue, button.skyblue{ /* --- skyblue color button --- */
 	color:#fff !important;
 	background: #26a2b6;
 	background: linear-gradient(#34bac9, #26a2b6);
 	background: -webkit-gradient(linear, left top, left bottom, from(#34bac9), to(#26a2b6));
 	filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorStr='#34bac9', EndColorStr='#26a2b6')");
 }
-button.skyblue:hover, button.skyblue:active{
+.boton.skyblue:hover, .boton.skyblue:active, button.skyblue:hover, button.skyblue:active{
 	background:#26a2b6;
 	background: linear-gradient(top, #26a2b6, #34bac9);
 	background:-webkit-gradient(linear, left top, left bottom, from(#26a2b6), to(#34bac9));
 }
 
-button.blue{ /* --- blue color button --- */
+.boton.blue, button.blue{ /* --- blue color button --- */
 	color:#fff !important;
 	background-color:#0085c6;
 	background: linear-gradient(#008fd5, #0085c6);
 	background: -webkit-gradient(linear, left top, left bottom, from(#008fd5), to(#0085c6));
 	filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorStr='#008fd5', EndColorStr='#0085c6')");
 }
-button.blue:hover, button.blue:active{
+.boton.blue:hover, .boton.blue:active, button.blue:hover, button.blue:active{
 	background:#008fd5;
 	background: linear-gradient(top, #008fd5, #009de9);
 	background:-webkit-gradient(linear, left top, left bottom, from(#008fd5), to(#009de9));
 }
 
-button.green{ /* --- green color button --- */
+.boton.green, button.green{ /* --- green color button --- */
 	color:#fff !important;
 	background: #51A351;
 	background: linear-gradient(#62C462, #51A351);
 	background: -webkit-gradient(linear, left top, left bottom, from(#62C462), to(#51A351));
 	filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorStr='#51A351', EndColorStr='#51A351')");
 }
-button.green:hover, button.green:active{
+.boton.green:hover, .boton.green:active, button.green:hover, button.green:active{
 	background: #51A351;
 	background: linear-gradient(top, #51A351, #5FA351);
 	background: -webkit-gradient(linear, left top, left bottom, from(#51A351), to(#5FA351));
 }
 
-button.yellow{ /* --- yellow color button --- */
+.boton.yellow, button.yellow{ /* --- yellow color button --- */
 	color:#fff !important;
 	background: #f0bf4a;
 	background: linear-gradient(#f0c930, #f0bf4a);
 	background: -webkit-gradient(linear, left top, left bottom, from(#f0c930), to(#f0bf4a));
 	filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorStr='#f0c930', EndColorStr='#f0bf4a')");
 }
-button.yellow:hover, button.yellow:active{
+.boton.yellow:hover, .boton.yellow:active, button.yellow:hover, button.yellow:active{
 	background:#f0bf4a;
 	background: linear-gradient(top, #f0bf4a, #f0c930);
 	background:-webkit-gradient(linear, left top, left bottom, from(#f0bf4a), to(#f0c930));
 }
 
-button.orange{ /* --- orange color button --- */
+.boton.orange, button.orange{ /* --- orange color button --- */
 	color:#fff !important;
 	background: #ff5c00;
 	background: linear-gradient(#ff6f40, #ff5c00);
 	background: -webkit-gradient(linear, left top, left bottom, from(#ff6f40), to(#ff5c00));
 	filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorStr='#ff6f40', EndColorStr='#ff5c00')");
 }
-button.orange:hover, button.orange:active{
+.boton.orange:hover, .boton.orange:active, button.orange:hover, button.orange:active{
 	background: #ff5c00;
 	background: linear-gradient(top, #ff5c00, #ff6f40);
 	background:-webkit-gradient(linear, left top, left bottom, from(#ff5c00), to(#ff6f40));
 }
 
-button.red{ /* --- red color button --- */
+.boton.red, button.red{ /* --- red color button --- */
 	color:#fff !important;
 	background: #bd362f;
 	background: linear-gradient(#bd362f, #b1322c);
 	background: -webkit-gradient(linear, left top, left bottom, from(#bd362f), to(#b1322c));
 	filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorStr='#bd362f', EndColorStr='#b1322c')");
 }
-button.red:hover, button.red:active{
+.boton.red:hover, .boton.red:active, button.red:hover, button.red:active{
   background: #bd362f;
   background:-webkit-gradient(linear, left top, left bottom, from(#bd362f), to(#cc3b34));
   background: linear-gradient(top, #bd362f, #cc3b34);
 }
 
-button.magenta{	/* --- magenta color button --- */
+.boton.magenta, button.magenta{	/* --- magenta color button --- */
 	color:#fff !important;
 	background: #b9298f;
 	background: linear-gradient(#b93180, #b9298f);
 	background: -webkit-gradient(linear, left top, left bottom, from(#b93180), to(#b9298f));
 	filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorStr='#b9298f', EndColorStr='#b9298f')");
 }
-button.magenta:hover, button.magenta:active{
+.boton.magenta:hover, .boton.magenta:active, button.magenta:hover, button.magenta:active{
 	background:#b9298f;
 	background:linear-gradient(top, #b9298f, #b9358f);
 	background:-moz-linear-gradient(top, #b9298f, #b9358f);
 	background:-webkit-gradient(linear, left top, left bottom, from(#b9298f), to(#b9358f));
 }
 
-button.black{ /* --- black color button --- */
+.boton.black, button.black{ /* --- black color button --- */
 	color:#fff !important;
 	background: #111;
 	background: linear-gradient(#333, #111);
 	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111));
 	filter unquote("progid:DXImageTransform.Microsoft.gradient(startColorStr='#333', EndColorStr='#111')");
 }
-button.black:hover, button.black:active{
+.boton.black:hover, .boton.black:active, button.black:hover, button.black:active{
 	background:#222;
 	background: linear-gradient(top, #222, #333);
 	background:-webkit-gradient(linear, left top, left bottom, from(#222), to(#333));
