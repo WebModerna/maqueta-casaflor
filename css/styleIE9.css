@@ -1,0 +1,15 @@
+#logo figure figcaption span
+{
+	color: #ededed !important;
+	font-weight: bolder;
+}
+.formulario
+{
+	float: left;
+}
+.tarifa
+{
+	float:left;
+	margin-bottom: 2em;
+	max-width: 50%;
+}

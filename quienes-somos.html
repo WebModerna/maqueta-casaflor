@@ -33,7 +33,7 @@
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'> -->
 	<link rel="stylesheet" type="text/css" href="css/style.min.css" />
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/scripts.js" async></script>
 	<script type="text/javascript" src="js/datepicker-completo.js" async ></script>
 
 	<!--[if IE 8]>
@@ -42,6 +42,10 @@
 	<script type="text/javascript" src="js/selectivizr-min.js"></script>
 	<link type="text/css" rel="stylesheet" href="css/styleIE8.css" />
 	<![endif]-->
+
+<!--[if IE 9]>
+	<link type="text/css" rel="stylesheet" href="css/styleIE9.css" />
+<![endif]-->
 
 	<!--[if gte IE 9]><style type="text/css">.gradient {filter:none !important;}</style><![endif]-->
 </head>
@@ -63,7 +67,7 @@
 		</div><!-- #logo -->
 	
 		<div id="search">
-			<form class="hform" name="" id="search" action="">
+			<form class="hform" name="" id="search" action="quienes-somos.html">
 					<input class="post" type="text" placeholder="husmear..." name="" id="" />
 					<span type="submit" class="post icon-search" name=""></span>
 			</form>
@@ -113,7 +117,7 @@
 		</nav>
 	</div>
 	<!-- Un lindo y bonito slideshow para deleitar -->
-	<div id="slideshow" class="cycle-slideshow slideshow wrapper" 
+	<!-- <div id="slideshow" class="cycle-slideshow slideshow wrapper" 
 		data-cycle-caption="#alt-caption"
 	    data-cycle-caption-template="{{alt}}"
 		data-cycle-fx=tileSlide
@@ -123,17 +127,15 @@
 		data-cycle-tile-vertical="false"
 		data-cycle-timeout="4500"
 		data-cycle-tile-count="4"
-		data-cycle-speed="500" >
-	
-		<img src="img/1.jpg" alt="casas de sobra">
+		data-cycle-speed="500" > -->
+	<div id="slideshow" class="cycle-slideshow slideshow wrapper" data-cycle-caption="#alt-caption" data-cycle-caption-template="{{alt}}" >
 		<img src="img/2.jpg" alt="Un gran complejo para disfru4ar">
-
 		<div id="alt-caption"></div>
 		
-		<div class="navegacion">
+		<!-- <div class="navegacion">
 			<a title="←" class="back" href="#">‹</a>
 			<a title="→" class="next" href="#">›</a>
-		</div>				
+		</div>	 -->			
 	</div><!-- #slideshow -->
 </header>
 

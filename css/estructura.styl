@@ -75,6 +75,27 @@ aside
 		p
 			margin 0.5em
 
+blockquote
+	border-left 4px solid dorado
+	font-family 'Fjord'
+	font-size 1.2em
+	font-style italic
+	padding-left 1em
+
+	&:before
+		content "\e643"
+		color dorado
+		display inline
+		font-family 'icomoon'
+		font-size 3em
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		line-height: 1;
+		speak: none;
+		text-transform: none;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 
 footer
 	border-top 1px solid #bbb
@@ -814,8 +835,9 @@ section
 					color blanco_lila
 
 			img
-				margin 1em auto
 				display block
+				margin 1em auto
+				width 80px
 
 	#search
 		margin 2em 0.1em auto auto
